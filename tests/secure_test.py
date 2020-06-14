@@ -21,6 +21,3 @@ class TestSecure:
         request.addfinalizer(quit)
         return secure_page.SecurePage(driver_)
 
-    def test_logout(self, secure_logout):
-        secure_logout.logout_()
-        assert (secure_logout.logout_success_message_present())
